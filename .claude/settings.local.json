@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Remove-Item \"c:\\\\Users\\\\heath\\\\.gemini\\\\antigravity\\\\scratch\\\\paddox-site\\\\logo.png\")"
+    ]
+  }
+}
