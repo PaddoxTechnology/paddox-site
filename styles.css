@@ -933,6 +933,7 @@ footer{background:#000;position:relative;z-index:1}
   .iso-scene,.about-split,.contact-split{grid-template-columns:1fr}
   .iso-scene{gap:48px;margin-bottom:48px}
   .about-split{gap:48px}
+  .section-about-light .about-split{margin-left:0}
   .partner-slide{min-width:60%}
   .iso-stack{perspective:800px}
   .ai-cols{grid-template-columns:1fr}
@@ -944,55 +945,87 @@ footer{background:#000;position:relative;z-index:1}
   .hero-right{padding-top:0}
 }
 @media(max-width:768px){
+  body{overflow-x:hidden}
   .section{padding:70px 0}
   .container,.footer-container{padding-left:24px;padding-right:24px}
   .hero-inner{padding:160px 24px 80px}
-  /* Nav — center logo, shrink it, pin hamburger right */
-  .nav-container{
-    padding:0 24px;
-    justify-content:center;
-    position:relative}
+
+  /* Nav */
+  .nav-container{padding:0 24px;justify-content:center;position:relative}
   .nav-logo-img-wrap{margin-left:0}
   .nav-logo-img{height:48px}
   .hamburger{display:flex;position:absolute;right:24px;top:50%;transform:translateY(-50%)}
   .nav-links,.nav-cta{display:none}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:94px;left:0;right:0;background:rgba(5,11,20,0.98);backdrop-filter:blur(20px);padding:12px;border-bottom:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,0.5);z-index:999;gap:4px}
+
   /* Hero text */
   .hero-line--left{margin-left:0;font-size:clamp(1.8rem,7vw,2.8rem)}
   .hero-title,.hero-line--main{font-size:clamp(1.8rem,7vw,2.8rem);text-align:left}
   .hero-sub-heading{font-size:clamp(1.1rem,4vw,1.4rem)}
   .hero-grid{grid-template-columns:1fr}
   .hero-right{padding-top:8px}
+  .hero-badges{gap:18px;flex-wrap:wrap}
+  .badge-img--iatf{width:36px;height:36px}
+  .badge-img--aiag,.badge-img--by{width:52px}
+  .badge-img--by1{width:68px}
+  .badge-img--coupa,.badge-img--kinaxis,.badge-img--o9{width:54px}
+
+  /* Grids */
   .grid-3{grid-template-columns:1fr}
   .grid-5,.grid-6{grid-template-columns:repeat(2,1fr)}
-  .partner-slide{min-width:85%}
   .value-grid,.uc-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
+
+  /* About */
+  .section-about-light .about-split{margin-left:0}
+
+  /* Contact */
   .contact-form{padding:24px 20px}
-  .hero-stats{gap:18px}
+
+  /* Footer */
   .footer-links{grid-template-columns:repeat(2,1fr)}
   .footer-bottom{flex-direction:column;text-align:center}
-  .ai-card{padding:26px 24px}
-  .cross-industry{flex-direction:column;align-items:flex-start;gap:10px}
-  .pillars-wrap{flex-direction:column;align-items:flex-start}
+
   /* Services slider stacks vertically */
   .svc-slide{grid-template-columns:1fr;padding:32px 24px 8px;gap:24px}
   .svc-slide__media{order:-1}
   .svc-tabs{padding:16px 24px 12px;gap:6px}
+  .svc-tab{font-size:0.72rem;padding:6px 14px}
+
   /* Industry grid */
   .ind-vgrid{grid-template-columns:repeat(2,1fr)}
+  .ind-vcard{height:260px}
   #industries{padding-top:120px!important;padding-bottom:80px!important}
-  /* Careers banner */
+
+  /* Use cases */
+  .value-card{height:340px}
+
+  /* Misc */
+  .hero-stats{gap:18px}
+  .ai-card{padding:26px 24px}
+  .pillars-wrap{flex-direction:column;align-items:flex-start}
+  .partner-slide{min-width:85%}
   .careers-banner__inner{padding:60px 24px}
+  .iso-copy h2{font-size:clamp(1.4rem,3.5vw,2rem)}
 }
 @media(max-width:480px){
   .grid-5,.grid-6{grid-template-columns:1fr}
   .about-stats{flex-wrap:wrap;gap:18px}
   .footer-links{grid-template-columns:1fr}
   .ind-vgrid{grid-template-columns:1fr}
+  .ind-vcard{height:220px}
   .hero-inner{padding:140px 20px 60px}
   .svc-slide{padding:24px 20px 8px}
-  .hero-badges{gap:16px;flex-wrap:wrap}
+  .hero-badges{gap:12px}
+  .badge-img--iatf{width:30px;height:30px}
+  .badge-img--aiag,.badge-img--by{width:44px}
+  .badge-img--by1{width:56px}
+  .badge-img--coupa,.badge-img--kinaxis,.badge-img--o9{width:46px}
+  .value-card{height:300px}
+  .section-hd{margin-bottom:36px}
+  .hero-line--left,.hero-title,.hero-line--main{font-size:clamp(1.5rem,8vw,2.4rem)}
+  .hero-cta{font-size:0.85rem;padding:10px 20px}
+  .contact-split .contact-info h2{font-size:clamp(1.4rem,5vw,2rem)}
 }
 
 /* USE CASES */

@@ -207,7 +207,25 @@
   .careers-hero__title{font-size:clamp(2rem,7vw,3rem)}
   .ch-line--3 .sunrise-text{font-size:clamp(3rem,12vw,5rem)}
   .careers-hero__sub{margin-top:4vh;margin-left:0}
-  .why-grid{grid-template-columns:1fr}
+  .careers-hero__cta{align-self:flex-start}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .why-card{padding:20px 18px}
   .jobs-grid{grid-template-columns:1fr}
-  .careers-hero__title{font-size:clamp(2.2rem,8vw,3rem)}
+  .job-card{padding:22px 20px}
+  .jobs-filter{gap:8px}
+  .jobs-filter__btn{padding:7px 14px;font-size:0.78rem}
+  .careers-open__copy h2{font-size:clamp(1.5rem,4vw,2.2rem)}
+  .careers-open__btn{padding:12px 24px}
+}
+@media(max-width:480px){
+  .careers-hero__inner{padding:130px 20px 60px}
+  .careers-hero__title{font-size:clamp(1.7rem,7vw,2.4rem)}
+  .ch-line--3 .sunrise-text{font-size:clamp(2.6rem,11vw,4rem)}
+  .careers-hero__sub{font-size:0.9rem}
+  .why-grid{grid-template-columns:1fr}
+  .why-card{padding:18px 16px}
+  .job-card{padding:18px 16px}
+  .jobs-filter__btn{padding:6px 12px;font-size:0.74rem}
+  .careers-open__copy h2{font-size:clamp(1.3rem,5vw,1.8rem)}
+  .careers-open__btn{width:100%;text-align:center}
 }
