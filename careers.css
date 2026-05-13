@@ -203,8 +203,10 @@
   .careers-open__inner{grid-template-columns:1fr;gap:48px}
 }
 @media(max-width:768px){
-  .careers-hero__inner{padding:140px 24px 80px}
-  .careers-hero__stats{gap:24px;padding:20px 20px}
+  .careers-hero__inner{padding:160px 24px 80px;align-items:flex-start;text-align:left}
+  .careers-hero__title{font-size:clamp(2rem,7vw,3rem)}
+  .ch-line--3 .sunrise-text{font-size:clamp(3rem,12vw,5rem)}
+  .careers-hero__sub{margin-top:4vh;margin-left:0}
   .why-grid{grid-template-columns:1fr}
   .jobs-grid{grid-template-columns:1fr}
   .careers-hero__title{font-size:clamp(2.2rem,8vw,3rem)}
